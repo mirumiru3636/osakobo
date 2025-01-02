@@ -355,7 +355,7 @@ background-color: blue;
 }
 @keyframes rotate1 {
 	from {
-		transform: translateX(0px) rotate(0deg);
+		transform: translateX(0px) rotate(80deg);
 	}
 	to {
 		transform: translateX(20px) rotate(-80deg);
@@ -363,30 +363,30 @@ background-color: blue;
 }
 @keyframes rotate2 {
 	from {
-		transform: translateX(20px) rotate(-45deg);
+		transform: translateX(40px) rotate(-45deg);
 	}
 	to {
-		transform: translateX(0px) rotate(0deg);
+		transform: translateX(0px) rotate(100deg);
 	}
 }
 .yuki li:nth-child(1) {
   width: 18px;
-	left: 0;
+	left: 60vw;
 	animation: fall 5s linear infinite, rotate1 3s ease-in-out infinite alternate;
 }
 .yuki li:nth-child(2) {
   width: 18px;
-	left: 5vw;
+	left: 80vw;
 	animation: fall 10s linear infinite, rotate1 2s ease-in-out infinite alternate;
 }
 .yuki li:nth-child(3) {
   width: 10px;
-	left: 15vw;
+	left: 20vw;
 	animation: fall 20s linear infinite, rotate1 3.5s ease-in-out infinite alternate;
 }
 .yuki li:nth-child(4) {
   width: 20px;
-	left: 30vw;
+	left: 0;
 	animation: fall 7s linear infinite, rotate2 4s ease-in-out infinite alternate;
 }
 .yuki li:nth-child(5) {
@@ -396,7 +396,7 @@ background-color: blue;
 }
 .yuki li:nth-child(6) {
   width: 18px;
-	left: 80vw;
+	left: 30vw;
 	animation: fall 11s linear infinite, rotate2 3s ease-in-out infinite alternate;
 } 
 
