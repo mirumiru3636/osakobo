@@ -405,6 +405,7 @@ text-align: center;
 @media (min-width:700px) {
   .ivent-img{
    margin-bottom: 0;
+   width: 40vw;
   }
 }
 @media (min-width:700px) {
@@ -412,12 +413,6 @@ text-align: center;
     margin-top: 100px;
    display: flex;
    justify-content: space-between;
-  }
-
-}
-@media (min-width:700px) {
-  .ivent-img{
-  width: 50vw;
   }
 
 }
