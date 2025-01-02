@@ -76,15 +76,16 @@ img {
 
 .l_header{
     background-image: url(../img/6A9B15DB-0B53-4BF5-8666-C4406C83CA60@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+   background-size: cover;
     position: relative;
+    height: 88%;
 }
 
 @media (min-width:1000px) {
   .l_header{
     background-image: url(../img/DSC04876.JPG);
    height: 100vh;
+   object-fit: cover;
 
    
   }
@@ -110,13 +111,8 @@ img {
  }
 .l_header-inner{
     width: 30vw;
-    height: 560px;
+    height: 88vh;
     background: var(--beige-color);
-}
-@media (min-width:500px) {
-  .l_header-inner{
-    height: 1000px;
-  }
 }
 @media (min-width:700px) {
   .l_header-inner{
@@ -407,6 +403,7 @@ text-align: center;
   color: var(--white-color);
 }
 .ivent{
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 86vw;
@@ -431,7 +428,6 @@ text-align: center;
 }
 @media (min-width:1000px) {
   .ivent{
-    margin-top: 100px;
    justify-content: space-between;
   }
 
