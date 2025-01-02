@@ -72,8 +72,6 @@ img {
 .l_container-sm {
   max-width: var(--content-width-sm);
 }
-
-
 .l_header{
     background-image: url(../img/6A9B15DB-0B53-4BF5-8666-C4406C83CA60@2x.jpg);
    background-size: cover;
@@ -267,7 +265,7 @@ background-color: blue;
 
     
 }
-.sakura {
+/* .sakura {
  
 	position: relative;
   z-index: 200;
@@ -330,7 +328,78 @@ background-color: blue;
 .sakura li:nth-child(6) {
 	left: 5vw;
 	animation: fall 11s linear infinite, rotate2 3s ease-in-out infinite alternate;
+} */
+
+.yuki {
+ 
+	position: relative;
+  z-index: 200;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	justify-content: center;
+	align-items: center;
 }
+.yuki li {
+	position: absolute;
+	display: block;
+	top:-20px;
+	animation: fall 10s linear infinite, rotate1 2s ease-in-out infinite alternate;
+}
+@keyframes fall {
+	to {
+		top: 100vh;
+	}
+}
+@keyframes rotate1 {
+	from {
+		transform: translateX(0px) rotate(0deg);
+	}
+	to {
+		transform: translateX(20px) rotate(-80deg);
+	}
+}
+@keyframes rotate2 {
+	from {
+		transform: translateX(20px) rotate(-45deg);
+	}
+	to {
+		transform: translateX(0px) rotate(0deg);
+	}
+}
+.yuki li:nth-child(1) {
+  width: 18px;
+	left: 0;
+	animation: fall 5s linear infinite, rotate1 3s ease-in-out infinite alternate;
+}
+.yuki li:nth-child(2) {
+  width: 18px;
+	left: 5vw;
+	animation: fall 10s linear infinite, rotate1 2s ease-in-out infinite alternate;
+}
+.yuki li:nth-child(3) {
+  width: 10px;
+	left: 15vw;
+	animation: fall 20s linear infinite, rotate1 3.5s ease-in-out infinite alternate;
+}
+.yuki li:nth-child(4) {
+  width: 20px;
+	left: 30vw;
+	animation: fall 7s linear infinite, rotate2 4s ease-in-out infinite alternate;
+}
+.yuki li:nth-child(5) {
+  width: 10px;
+	left: 50vw;
+	animation: fall 20s linear infinite, rotate1 4s ease-in-out infinite alternate;
+}
+.yuki li:nth-child(6) {
+  width: 18px;
+	left: 80vw;
+	animation: fall 11s linear infinite, rotate2 3s ease-in-out infinite alternate;
+} 
+
 @media  (min-width:900px){
   main{
     display: flex;
@@ -397,12 +466,16 @@ text-align: center;
   text-align: center;
   color: var(--white-color);
 }
+.top_color{
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 100px;
+  background:linear-gradient(10deg,#020918, #a2aec2)
+}
 .ivent{
-  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 86vw;
-  margin-bottom: 100px;
 }
 .ivent-img{
   margin-bottom: 50px;
@@ -430,6 +503,8 @@ text-align: center;
 
 .mozi{
   font-size: 0.9em;
+  color: #fff;
+  text-align: center;
 }
 @media (min-width:700px) {
   .mozi{
